@@ -1,0 +1,68 @@
+        Scanner sc = new Scanner(System.in);
+        
+        //Notas
+        int notaCem, notaCinquenta, notaVinte, notaDez, notaCinco, notaUm;
+        
+        int saldoTotal;
+        
+        //Entrada quantidade de cada nota
+        //Valida se o número digitado é negativo
+        //Valida Nota 100
+        do {
+            System.out.println("Entre com a quantidade inicial de notas de 100:");
+            notaCem = sc.nextInt();
+            if (notaCem < 0) {
+                System.out.println("Número inválido, digite novamente:");
+            }
+        } while (notaCem < 0);
+        
+        //Valida Nota 50
+        do {
+            System.out.println("Entre com a quantidade inicial de notas de 50:");
+            notaCinquenta = sc.nextInt();
+            if (notaCinquenta < 0) {
+                System.out.println("Número inválido, digite novamente:");
+            }
+        } while (notaCinquenta < 0);
+        
+        //Valida Nota 20
+        do {
+            System.out.println("Entre com a quantidade inicial de notas de 20:");
+            notaVinte = sc.nextInt();
+            if (notaVinte < 0) {
+                System.out.println("Número inválido, digite novamente:");
+            }
+        } while (notaVinte < 0);
+        
+        //Valida Nota 10
+        do {
+            System.out.println("Entre com a quantidade inicial de notas de 10:");
+            notaDez = sc.nextInt();
+            if (notaDez < 0) {
+                System.out.println("Número inválido, digite novamente:");
+            }
+        } while (notaDez < 0);
+        
+        //Valida Nota 5
+        do {
+            System.out.println("Entre com a quantidade inicial de notas de 5:");
+            notaCinco = sc.nextInt();
+            if (notaCinco < 0) {
+                System.out.println("Número inválido, digite novamente:");
+            }
+        } while (notaCinco < 0);
+        
+        //Valida Nota 1
+        do {
+            System.out.println("Entre com a quantidade inicial de notas de 1:");
+            notaUm = sc.nextInt();
+        if (notaUm < 0) {
+                System.out.println("Número inválido, digite novamente:");
+            }
+        } while (notaUm < 0);
+        
+        //Salto total
+        saldoTotal = notaCem+ notaCinquenta+ notaVinte+ notaDez+ notaCinco+ notaUm;
+        
+        //Quantidade de notas
+        System.out.println("Situação atual " + notaCem + " " + notaCinquenta + " " + notaVinte + " " + notaDez + " " + notaCinco + " " + notaUm);

@@ -1,0 +1,25 @@
+                           Enunciado
+criar um programa que dê ao usuario várias funções a ser executada.
+antes de iniciar alguma coisa ele pede o usuario e a senha
+enquanto a senha não for válida não passa para a proxima etapa.
+a proxima etapa é dar a opção de execultar as seguintes operações 
+* Operações matematicas 
+-soma
+-subtração
+-divisão
+-multiplicação
+*calculo de média
+-media aritimetica
+-média por peso
+*calculo de formulas
+-baskara
+-quadrado
+-triânglo
+-retaângulo
+*Cadastro de alunos e exibir a maior nota
+-nome
+-matricula
+-nota (mosrtar a maior)
+
+ao fim de cada operação o programa deve perguntar se o usuário 
+deseja executar alguma das funções anteriores ou sair do programa.

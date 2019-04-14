@@ -1,0 +1,82 @@
+// Deposito
+        // Iniciando Variaveis
+        int novaNotaCem = 0;
+        int novaNotaCinquenta = 0;
+        int novaNotaVinte = 0;
+        int novaNotaDez = 0;
+        int novaNotaCinco = 0;
+        int novaNotaUm = 0;
+        int totalDepositado = 0;
+
+        //Valida Nota 100
+        do {
+            System.out.println("Entre com a quantidade de notas de 100:");
+            novaNotaCem = sc.nextInt();
+            if (novaNotaCem < 0) {
+                System.out.println("Número inválido, digite novamente:");
+            }
+        } while (novaNotaCem < 0);
+
+        //Valida novaNota 50
+        do {
+            System.out.println("Entre com a quantidade de novaNotas de 50:");
+            novaNotaCinquenta += sc.nextInt();
+            if (novaNotaCinquenta < 0) {
+                System.out.println("Número inválido, digite novamente:");
+            }
+        } while (novaNotaCinquenta < 0);
+
+        //Valida novaNota 20
+        do {
+            System.out.println("Entre com a quantidade de novaNotas de 20:");
+            novaNotaVinte += sc.nextInt();
+            if (novaNotaVinte < 0) {
+                System.out.println("Número inválido, digite novamente:");
+            }
+        } while (novaNotaVinte < 0);
+
+        //Valida novaNota 10
+        do {
+            System.out.println("Entre com a quantidade de novaNotas de 10:");
+            novaNotaDez += sc.nextInt();
+            if (novaNotaDez < 0) {
+                System.out.println("Número inválido, digite novamente:");
+            }
+        } while (novaNotaDez < 0);
+
+        //Valida novaNota 5
+        do {
+            System.out.println("Entre com a quantidade de novaNotas de 5:");
+            novaNotaCinco += sc.nextInt();
+            if (novaNotaCinco < 0) {
+                System.out.println("Número inválido, digite novamente:");
+            }
+        } while (novaNotaCinco < 0);
+
+        //Valida novaNota 1
+        do {
+            System.out.println("Entre com a quantidade de novaNotas de 1:");
+            novaNotaUm += sc.nextInt();
+            if (novaNotaUm < 0) {
+                System.out.println("Número inválido, digite novamente:");
+            }
+        } while (novaNotaUm < 0);
+
+        //Salto total
+        totalDepositado = (novaNotaCem * 100) + (novaNotaCinquenta * 50) + (novaNotaVinte * 20) + (novaNotaDez * 10) + (novaNotaCinco * 5) + (novaNotaUm * 1);
+        saldoTotal = saldoTotal + totalDepositado;
+
+        //Quantidade de notas
+        System.out.println("Total depositado: M$" + totalDepositado);
+
+        // Situação atual
+        notaCem = novaNotaCem + notaCem;
+        notaCinquenta = novaNotaCinquenta + notaCinquenta;
+        notaVinte = notaVinte + novaNotaVinte;
+        notaDez = notaDez + novaNotaDez;
+        notaCinco = notaCinco + novaNotaCinco;
+        notaUm = notaUm + novaNotaUm;
+
+        System.out.println("Situação atual " + notaCem + " " + notaCinquenta + " " + notaVinte + " " + notaDez + " " + notaCinco + " " + notaUm);
+
+        System.out.println("Saldo Total: " + saldoTotal);
